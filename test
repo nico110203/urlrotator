@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Rotator</title>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Liste des URLs vers lesquelles vous souhaitez rediriger
+      var urls = [
+        "https://example.com/page1",
+        "https://example.com/page2",
+        "https://example.com/page3"
+      ];
+
+      // Sélectionnez une URL aléatoire dans la liste
+      var randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+      // Redirigez l'utilisateur vers l'URL sélectionnée
+      window.location.href = randomUrl;
+    });
+  </script>
+</body>
+</html>
